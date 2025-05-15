@@ -201,7 +201,11 @@ span {
 .edDetails p{
     margin: 0;
 }
-
+#moreAbout{
+    margin-top: 2.5rem; 
+    display: flex;
+    justify-content: space-around;
+}
 
 /* .service {
     width: 100%;
@@ -238,6 +242,13 @@ span {
     transform: scale(1.02);
 }
 .service-container .service-box:hover i {
+    transform: rotate(180deg);
+}
+.service-container .service-box:focus {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.service-container .service-box:focus i {
     transform: rotate(180deg);
 }
 
@@ -494,6 +505,8 @@ span {
 
     .home-img img {
         margin-top: 4rem;
+        width: 250px;
+
     }
 
     .about {
@@ -525,8 +538,15 @@ span {
     }
    
        .about-img img{
-        width: 40vh;
+        display:none;
        }
+        #moreAbout{
+            margin-top: 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
 }
 @media (max-width:450px) {
    html{
